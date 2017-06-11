@@ -6,7 +6,6 @@
   padding: 20px;
 }
 .logo-jrf{
-  margin-left: 10%;
   height: 100px;
   width: 80px;
   background-image: url("/../images/logo_jrf.png");
@@ -14,12 +13,17 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: scroll;
+  width: 20%;
 
 }
-.nav{
+
+.nav-desktop{
   display: flex;
   list-style: none;
   margin-top: 35px;
+  width: 80%;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
 
 .link-item{
@@ -28,5 +32,74 @@
   color: $light-color-typography;
 }
 .link-item:hover{
+  border-top: 60px solid;
+  border-bottom: 10px solid;
+  border-color: rgba($light-color-typography, 0.3);
+}
+.nav-movile{
+  display: none;
+}
+.menu-icon{
+  display: none;
+  width: 40px;
+}
 
+
+@media (max-width: $breakpoint-desktop){
+  .nav-desktop{
+    display: none;
+  }
+  .menu-icon{
+    display: flex;
+    width: 40px;
+    margin: auto;
+  }
+  .menu-icon:hover{
+    background-color: rgba($light-color-typography, 0.3)
+  }
+
+  .header{
+    width: 100vw;
+    height: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-jrf{
+    margin-left: 0;
+  }
+
+.active{
+    .nav-desktop{
+      display: none;
+    }
+    .header{
+    flex-direction: column;
+    align-items: center;
+    }
+    .nav-movile{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    ul{
+      padding: 20px;
+      margin-top: 20px;
+      width: 100vw;
+      background-color: rgba($light-color-typography, 0.5);
+    }
+    .link-item{
+      padding: 15px;
+      margin-left: 0;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color: $light-color-typography;
+    }
+    .link-item:hover{
+      border: none;
+      color: $dark-color-typography;
+    }
+
+  }
 }

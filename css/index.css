@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 .uppercase {
   text-transform: uppercase; }
 
+button {
+  background: none;
+  border: none; }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -44,27 +48,106 @@ body {
   padding: 20px; }
 
 .logo-jrf {
-  margin-left: 10%;
   height: 100px;
   width: 80px;
   background-image: url("/../images/logo_jrf.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-attachment: scroll; }
+  background-attachment: scroll;
+  width: 20%; }
 
-.nav {
+.nav-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-top: 35px; }
+  margin-top: 35px;
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px; }
 
 .link-item {
   margin-left: 15px;
   text-decoration: none;
   color: #fff; }
 
+.link-item:hover {
+  border-top: 60px solid;
+  border-bottom: 10px solid;
+  border-color: rgba(255, 255, 255, 0.3); }
+
+.nav-movile {
+  display: none; }
+
+.menu-icon {
+  display: none;
+  width: 40px; }
+
+@media (max-width: 800px) {
+  .nav-desktop {
+    display: none; }
+
+  .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    margin: auto; }
+
+  .menu-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+  .header {
+    width: 100vw;
+    height: auto;
+    padding: 20px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .logo-jrf {
+    margin-left: 0; }
+
+  .active .nav-desktop {
+    display: none; }
+  .active .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .active .nav-movile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none; }
+  .active ul {
+    padding: 20px;
+    margin-top: 20px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .active .link-item {
+    padding: 15px;
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff; }
+  .active .link-item:hover {
+    border: none;
+    color: #555; } }
 .footer {
   background-color: #000;
   width: 100vw;
