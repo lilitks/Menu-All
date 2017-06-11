@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/background_model.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.body {
+  padding: 30px;
+  width: auto; }
+
+.main-body {
+  width: 100%;
+  height: 400px; }
+
+.header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px; }
+
+.logo-jrf {
+  margin-left: 10%;
+  height: 100px;
+  width: 80px;
+  background-image: url("/../images/logo_jrf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 35px; }
+
+.link-item {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff; }
+
+.footer {
+  background-color: #000;
+  width: 100vw;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  opacity: 0.5; }
+
+.logo-jrf-footer {
+  margin: auto;
+  height: 100%;
+  width: 80px;
+  background-image: url("/../images/logo_jrf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll; }
+
+/*# sourceMappingURL=index.css.map */

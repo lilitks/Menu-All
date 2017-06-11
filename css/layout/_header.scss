@@ -1,0 +1,32 @@
+.header{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.logo-jrf{
+  margin-left: 10%;
+  height: 100px;
+  width: 80px;
+  background-image: url("/../images/logo_jrf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+
+}
+.nav{
+  display: flex;
+  list-style: none;
+  margin-top: 35px;
+}
+
+.link-item{
+  margin-left: 15px;
+  text-decoration: none;
+  color: $light-color-typography;
+}
+.link-item:hover{
+
+}

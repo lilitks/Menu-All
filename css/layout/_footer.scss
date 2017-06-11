@@ -1,0 +1,19 @@
+.footer{
+  background-color: $dark-background;
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  padding: 20px;
+  opacity: 0.5;
+
+}
+.logo-jrf-footer{
+  margin: auto;
+  height: 100%;
+  width: 80px;
+  background-image: url("/../images/logo_jrf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+}
