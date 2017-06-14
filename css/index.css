@@ -5,6 +5,22 @@
   padding: 0; }
 
 body {
+  height: 80vh;
+  background-image: url("../../images/background_model.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.body {
+  padding: 30px;
+  width: auto; }
+
+.main-body {
+  width: 100%;
+  height: 100%; }
+
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
@@ -19,25 +35,121 @@ button {
   background: none;
   border: none; }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../images/background_model.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+.modalBnt {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 40px; }
 
-.body {
-  padding: 30px;
-  width: auto; }
+.close-modalBnt {
+  border: none;
+  color: #555;
+  font-size: 0.9em; }
+
+.close-modalBnt:hover {
+  color: rgba(85, 85, 85, 0.3);
+  text-decoration: line-through;
+  -webkit-transition: text-decoration 0.8s, color 0.8s;
+  transition: text-decoration 0.8s, color 0.8s; }
+
+.close-modalBnt:active {
+  background-color: rgba(85, 85, 85, 0.3); }
+
+.next-modalBnt {
+  border: 1px solid #555;
+  color: #555;
+  font-size: 1em;
+  padding: 10px 20px; }
+
+.next-modalBnt:hover {
+  background-color: rgba(85, 85, 85, 0.3);
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s; }
+
+.next-modalBnt:active {
+  background-color: rgba(85, 85, 85, 0.9);
+  color: #fff;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
 
 .main-body {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.modalBnt:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.modalBnt:active {
+  background-color: rgba(85, 85, 85, 0.3); }
+
+.about-modal {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
-  height: 400px; }
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 140px; }
+
+.about-m {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.title-modal {
+  font-family: "Montserrat", sans-serif;
+  color: #555;
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: 25px; }
+
+.subtitle-modal {
+  font-family: "Montserrat", sans-serif;
+  color: #555;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-bottom: 20px; }
+
+.main-text-modal {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  font-size: 1em;
+  font-weight: 200;
+  margin-bottom: 20px; }
+
+.close-modalBnt {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .header {
   width: 100vw;
+  height: 30vh;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +168,16 @@ body {
   background-size: contain;
   background-attachment: scroll;
   width: 20%; }
+
+.logo-jrf:hover {
+  background-image: url("/../images/logo_jrf_block2.png");
+  background-position: flex-end;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  opacity: 0.7;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s; }
 
 .menu-icon-btn {
   display: none; }
@@ -85,8 +207,7 @@ body {
 .link-item:hover {
   border-top: 60px solid;
   border-bottom: 10px solid;
-  border-color: rgba(255, 255, 255, 0.3);
-  color: #555; }
+  border-color: rgba(255, 255, 255, 0.3); }
 
 @media (max-width: 800px) {
   .menu-icon-btn {
@@ -171,6 +292,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: scroll; }
+
+.logo-jrf-footer:hover {
+  background-image: url("/../images/logo_jrf_block2.png");
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s; }
 
 .active {
   display: -webkit-box;

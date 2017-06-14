@@ -1,17 +1,60 @@
-body{
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../images/background_model.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.body{
-  padding: 30px;
-  width: auto;
-}
+
 .main-body{
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.modalBnt:hover{
+  background-color: rgba($light-color-typography, 0.3)
+}
+.modalBnt:active{
+  background-color: rgba($dark-color-typography, 0.3)
+}
+
+.about-modal{
+  display: none;
+  background-color: rgba($light-color-typography, 0.3);
   width: 100%;
-  height: 400px;
+  height:100%;
+  top:0;
+  left:0;
+  position: fixed;
+  padding: 140px;
+}
+.about-m{
+  background-color: $light-color-typography;
+  width: 100%;
+  height:100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-modal{
+  font-family: $main-typography;
+  color: $dark-color-typography;
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: 25px;
+}
+.subtitle-modal{
+  font-family: $main-typography;
+  color: $dark-color-typography;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.main-text-modal{
+  font-family: $text-typography;
+  color: $dark-color-typography;
+  font-size: 1em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.close-modalBnt{
+  align-self: flex-end;
 }

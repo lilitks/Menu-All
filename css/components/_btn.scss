@@ -2,3 +2,42 @@ button{
   background: none;
   border: none;
 }
+
+.modalBnt{
+  border: 1px solid $light-color-typography;
+  color: $light-color-typography;
+  font-size: $font-size-small;
+  padding: 10px 40px;
+}
+
+.close-modalBnt{
+  border: none;
+  color: $dark-color-typography;
+  font-size: 0.9em;
+}
+.close-modalBnt:hover{
+  color: rgba($dark-color-typography, 0.3);
+  text-decoration: line-through;
+  transition: text-decoration 0.8s, color 0.8s;
+
+}
+.close-modalBnt:active{
+  background-color: rgba($dark-color-typography, 0.3);
+}
+
+.next-modalBnt{
+  border: 1px solid $dark-color-typography;
+  color: $dark-color-typography;
+  font-size: $font-size-small;
+  padding: 10px 20px;
+}
+.next-modalBnt:hover{
+  background-color: rgba($dark-color-typography, 0.3);
+  transition: background-color 0.8s;
+}
+.next-modalBnt:active{
+  background-color: rgba($dark-color-typography, 0.9);
+  color: $light-color-typography;
+  transition: background-color 0.5s, color 0.5s;
+
+}
